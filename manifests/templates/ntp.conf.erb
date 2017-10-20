@@ -1,3 +1,7 @@
+driftfile /var/lib/ntp/drift
+
+restrict default nomodify notrap nopeer noquery
+
 <% @servers.each do |server| -%>
     <%= server %>
 <% end -%>
