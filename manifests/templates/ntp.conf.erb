@@ -1,0 +1,9 @@
+<% @servers.each do |server| -%>
+    <%= server %>
+<% end -%>
+
+includefile /etc/ntp/crypto/pw
+
+keys /etc/ntp/keys
+
+disable monitor
